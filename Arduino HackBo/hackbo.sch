@@ -1,0 +1,441 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hackbo-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "14 aug 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA168-A IC1
+U 1 1 53ACB04F
+P 2500 2500
+F 0 "IC1" H 1750 3750 40  0000 L BNN
+F 1 "ATMEGA168-A" H 2950 1100 40  0000 L BNN
+F 2 "TQFP32" H 2500 2500 30  0000 C CIN
+F 3 "" H 2500 2500 60  0000 C CNN
+	1    2500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 53ACB4F3
+P 1500 1300
+F 0 "#PWR01" H 1500 1400 30  0001 C CNN
+F 1 "VCC" H 1500 1400 30  0000 C CNN
+F 2 "" H 1500 1300 60  0000 C CNN
+F 3 "" H 1500 1300 60  0000 C CNN
+	1    1500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 53ACB617
+P 1050 1250
+F 0 "C2" H 1050 1350 40  0000 L CNN
+F 1 "0.1uF" H 1056 1165 40  0000 L CNN
+F 2 "SM0603" H 1088 1100 30  0000 C CNN
+F 3 "~" H 1050 1250 60  0000 C CNN
+	1    1050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 53ACB658
+P 1050 1550
+F 0 "#PWR02" H 1050 1550 30  0001 C CNN
+F 1 "GND" H 1050 1480 30  0001 C CNN
+F 2 "" H 1050 1550 60  0000 C CNN
+F 3 "" H 1050 1550 60  0000 C CNN
+	1    1050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 53ACB66D
+P 1050 950
+F 0 "#PWR03" H 1050 1050 30  0001 C CNN
+F 1 "VCC" H 1050 1050 30  0000 C CNN
+F 2 "" H 1050 950 60  0000 C CNN
+F 3 "" H 1050 950 60  0000 C CNN
+	1    1050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 53ACB77A
+P 700 1250
+F 0 "C1" H 700 1350 40  0000 L CNN
+F 1 "0.1uF" H 706 1165 40  0000 L CNN
+F 2 "SM0603" H 738 1100 30  0000 C CNN
+F 3 "~" H 700 1250 60  0000 C CNN
+	1    700  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 53ACB780
+P 700 1550
+F 0 "#PWR04" H 700 1550 30  0001 C CNN
+F 1 "GND" H 700 1480 30  0001 C CNN
+F 2 "" H 700 1550 60  0000 C CNN
+F 3 "" H 700 1550 60  0000 C CNN
+	1    700  1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 53ACB786
+P 700 950
+F 0 "#PWR05" H 700 1050 30  0001 C CNN
+F 1 "VCC" H 700 1050 30  0000 C CNN
+F 2 "" H 700 950 60  0000 C CNN
+F 3 "" H 700 950 60  0000 C CNN
+	1    700  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 53ACB966
+P 1550 3800
+F 0 "#PWR06" H 1550 3800 30  0001 C CNN
+F 1 "GND" H 1550 3730 30  0001 C CNN
+F 2 "" H 1550 3800 60  0000 C CNN
+F 3 "" H 1550 3800 60  0000 C CNN
+	1    1550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_6 P2
+U 1 1 53ACBD0A
+P 6250 3050
+F 0 "P2" V 6200 3050 60  0000 C CNN
+F 1 "CONN_6" V 6300 3050 60  0000 C CNN
+F 2 "SIL-6" H 6250 3050 60  0001 C CNN
+F 3 "" H 6250 3050 60  0000 C CNN
+	1    6250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRYSTAL X1
+U 1 1 53ACBEB2
+P 4550 2100
+F 0 "X1" H 4550 2250 60  0000 C CNN
+F 1 "CRYSTAL" H 4550 1950 60  0000 C CNN
+F 2 "HC-49V" H 4550 2100 60  0001 C CNN
+F 3 "~" H 4550 2100 60  0000 C CNN
+	1    4550 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C3
+U 1 1 53ACBECF
+P 4150 2400
+F 0 "C3" H 4150 2500 40  0000 L CNN
+F 1 "22pF" H 4156 2315 40  0000 L CNN
+F 2 "SM0603" H 4188 2250 30  0001 C CNN
+F 3 "~" H 4150 2400 60  0000 C CNN
+	1    4150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 53ACBEDE
+P 4950 2400
+F 0 "C4" H 4950 2500 40  0000 L CNN
+F 1 "22pF" H 4956 2315 40  0000 L CNN
+F 2 "SM0603" H 4988 2250 30  0001 C CNN
+F 3 "~" H 4950 2400 60  0000 C CNN
+	1    4950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 53ACBEED
+P 4550 2650
+F 0 "#PWR07" H 4550 2650 30  0001 C CNN
+F 1 "GND" H 4550 2580 30  0001 C CNN
+F 2 "" H 4550 2650 60  0000 C CNN
+F 3 "" H 4550 2650 60  0000 C CNN
+	1    4550 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 2100
+Connection ~ 4550 2600
+Wire Wire Line
+	4550 2600 4550 2650
+Wire Wire Line
+	4150 2600 4950 2600
+Wire Wire Line
+	4150 2100 4150 2200
+Wire Wire Line
+	3500 2100 4250 2100
+Wire Wire Line
+	4950 1800 4950 2200
+Wire Wire Line
+	4850 2100 4950 2100
+Connection ~ 1550 3700
+Wire Wire Line
+	700  950  700  1050
+Wire Wire Line
+	700  1450 700  1550
+Connection ~ 1550 3600
+Wire Wire Line
+	1550 3700 1600 3700
+Wire Wire Line
+	1550 3600 1600 3600
+Wire Wire Line
+	1550 3500 1550 3800
+Wire Wire Line
+	1600 3500 1550 3500
+Wire Wire Line
+	1050 950  1050 1050
+Wire Wire Line
+	1050 1450 1050 1550
+Connection ~ 1500 1400
+Connection ~ 1500 1700
+Wire Wire Line
+	1500 2000 1600 2000
+Connection ~ 1500 1500
+Wire Wire Line
+	1500 1700 1600 1700
+Wire Wire Line
+	1500 1500 1600 1500
+Wire Wire Line
+	1600 1400 1500 1400
+Wire Wire Line
+	3500 2000 4150 2000
+Wire Wire Line
+	4150 2000 4150 1800
+Wire Wire Line
+	4150 1800 4950 1800
+Connection ~ 4950 2100
+Wire Wire Line
+	3500 3500 3750 3500
+Text Label 3550 3500 0    60   ~ 0
+D5
+Wire Wire Line
+	3500 3600 3750 3600
+Text Label 3550 3600 0    60   ~ 0
+D6
+Wire Wire Line
+	3500 3700 3750 3700
+Text Label 3550 3700 0    60   ~ 0
+D7
+Wire Wire Line
+	3500 1400 3750 1400
+Text Label 3550 1400 0    60   ~ 0
+D8
+Wire Wire Line
+	3500 1500 3750 1500
+Text Label 3550 1500 0    60   ~ 0
+D9
+Wire Wire Line
+	3500 1600 3750 1600
+Text Label 3550 1600 0    60   ~ 0
+D10
+Wire Wire Line
+	3500 1700 3750 1700
+Text Label 3550 1700 0    60   ~ 0
+MOSI
+Wire Wire Line
+	3500 1800 3750 1800
+Wire Wire Line
+	3500 1900 3750 1900
+Text Label 3550 1800 0    60   ~ 0
+MISO
+Text Label 3550 1900 0    60   ~ 0
+SCK
+Wire Wire Line
+	1500 1300 1500 1700
+$Comp
+L C C5
+U 1 1 53EC1025
+P 1300 2000
+F 0 "C5" H 1300 2100 40  0000 L CNN
+F 1 "0.1uF" H 1306 1915 40  0000 L CNN
+F 2 "SM0603" H 1338 1850 30  0000 C CNN
+F 3 "~" H 1300 2000 60  0000 C CNN
+	1    1300 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 53EC1058
+P 1100 2000
+F 0 "#PWR08" H 1100 2000 30  0001 C CNN
+F 1 "GND" H 1100 1930 30  0001 C CNN
+F 2 "" H 1100 2000 60  0000 C CNN
+F 3 "" H 1100 2000 60  0000 C CNN
+	1    1100 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 2250 3750 2250
+Wire Wire Line
+	3500 2350 3750 2350
+Wire Wire Line
+	3500 2450 3750 2450
+Wire Wire Line
+	3500 2550 3750 2550
+Wire Wire Line
+	3500 2650 3750 2650
+Wire Wire Line
+	3500 2750 3750 2750
+Text Label 3550 2250 0    60   ~ 0
+A0
+Text Label 3550 2350 0    60   ~ 0
+A1
+Text Label 3550 2450 0    60   ~ 0
+A2
+Text Label 3550 2550 0    60   ~ 0
+A3
+Text Label 3550 2650 0    60   ~ 0
+A4
+Text Label 3550 2750 0    60   ~ 0
+A5
+Wire Wire Line
+	3500 3000 3750 3000
+Wire Wire Line
+	3500 3100 3750 3100
+Wire Wire Line
+	3500 3200 3750 3200
+Text Label 3550 3000 0    60   ~ 0
+RXI
+Text Label 3550 3100 0    60   ~ 0
+TXO
+Text Label 3550 3200 0    60   ~ 0
+D2
+Wire Wire Line
+	4550 2800 4800 2800
+Text Label 4600 2800 0    60   ~ 0
+D5
+Wire Wire Line
+	4550 2900 4800 2900
+Text Label 4600 2900 0    60   ~ 0
+D6
+Wire Wire Line
+	4550 3000 4800 3000
+Text Label 4600 3000 0    60   ~ 0
+D7
+Wire Wire Line
+	4550 3100 4800 3100
+Text Label 4600 3100 0    60   ~ 0
+D8
+Wire Wire Line
+	4550 3200 4800 3200
+Text Label 4600 3200 0    60   ~ 0
+D9
+Wire Wire Line
+	4550 3300 4800 3300
+Text Label 4600 3300 0    60   ~ 0
+D10
+$Comp
+L CONN_8 P3
+U 1 1 53EC1646
+P 5150 3150
+F 0 "P3" V 5100 3150 60  0000 C CNN
+F 1 "CONN_8" V 5200 3150 60  0000 C CNN
+F 2 "SIL-8" H 5150 3150 60  0001 C CNN
+F 3 "" H 5150 3150 60  0000 C CNN
+	1    5150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3400 4800 3400
+Text Label 4600 3400 0    60   ~ 0
+MOSI
+Wire Wire Line
+	4550 3500 4800 3500
+Text Label 4600 3500 0    60   ~ 0
+MISO
+Wire Wire Line
+	4600 3700 4850 3700
+Wire Wire Line
+	4600 3800 4850 3800
+Wire Wire Line
+	4600 3900 4850 3900
+Wire Wire Line
+	4600 4000 4850 4000
+Text Label 4650 3700 0    60   ~ 0
+A2
+Text Label 4650 3800 0    60   ~ 0
+A3
+Text Label 4650 3900 0    60   ~ 0
+A4
+Text Label 4650 4000 0    60   ~ 0
+A5
+$Comp
+L CONN_8 P1
+U 1 1 53EC180F
+P 5200 4050
+F 0 "P1" V 5150 4050 60  0000 C CNN
+F 1 "CONN_8" V 5250 4050 60  0000 C CNN
+F 2 "SIL-8" H 5200 4050 60  0001 C CNN
+F 3 "" H 5200 4050 60  0000 C CNN
+	1    5200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4100 4850 4100
+Wire Wire Line
+	4600 4200 4850 4200
+Wire Wire Line
+	4600 4300 4850 4300
+Text Label 4650 4100 0    60   ~ 0
+RXI
+Text Label 4650 4200 0    60   ~ 0
+TXO
+Text Label 4650 4300 0    60   ~ 0
+D2
+Wire Wire Line
+	5650 2800 5900 2800
+Text Label 5700 2800 0    60   ~ 0
+SCK
+Wire Wire Line
+	5650 2900 5900 2900
+Wire Wire Line
+	5650 3000 5900 3000
+Text Label 5700 2900 0    60   ~ 0
+A0
+Text Label 5700 3000 0    60   ~ 0
+A1
+$EndSCHEMATC
